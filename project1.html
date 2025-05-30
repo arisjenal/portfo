@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Raleway:wght@700&display=swap');
+
+    :root {
+      --bg-dark: #0f172a;
+      --color-primary: #00bfa6; /* turquoise */
+      --color-secondary: #264653; /* deep blue */
+      --color-accent: #f4a261; /* warm orange */
+      --color-text-light: #f0f0f0;
+      --transition-speed: 0.4s;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--color-text-light);
+      font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      align-items: flex-start;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .image-container {
+      flex: 1;
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 500%;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0 0 20px var(--color-primary);
+      transition: transform var(--transition-speed) ease;
+    }
+
+    .text-deskripsi {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .text-deskripsi h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      text-shadow: 0 0 8px var(--color-primary);
+    }
+
+    .text2 {
+      margin-top: 105%;
+    }
+
+    .text-deskripsi p {
+      font-size: 1.2rem;
+      color: #d1d5db;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+      }
+
+      .image-container {
+        max-width: 100%;
+      }
+
+      .image-container img {
+        height: 300px;
+      }
+
+      .text-deskripsi h1 {
+        font-size: 2rem;
+      }
+
+      .text-deskripsi p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="image-container">
+      <img src="brit2.png" alt="Home Page Image" />
+      <img src="tentang.png" alt="Services Page Image" />
+    </div>
+    <div class="text-deskripsi">
+      <h1>Brit Jasa - Home</h1>
+      <p>
+        Website Brit Jasa terpercaya dan profesional yang menggunakan html, css dan javascript. Website Brit Jasa adalah
+        website penyedia jasa Konsultasi Bisnis, Digital Marketing, Web Development yang terpercaya dan profesional dengan harga
+        terjangkau. Website ini juga pupoler di kalangan penyedia jasa dengan banyak fitur yang terus di kembangkan. Pada tampilan
+        sebelah kiri adalah desain halaman home.
+      </p>
+      <h1 class="text2">Brit Jasa - Tentang Kami</h1>
+      <p>
+        Halaman Layanan pada Website Brit Jasa menampilkan berbagai layanan profesional yang ditawarkan, termasuk Konsultasi
+        Bisnis, Digital Marketing, dan Pengembangan Web. Setiap layanan dirancang untuk memenuhi kebutuhan klien dengan pendekatan
+        berbasis data dan solusi yang disesuaikan. Tampilan sebelah kiri menunjukkan desain halaman Tentang Kami yang responsif dan menarik.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    // Basic JavaScript for potential interactivity (e.g., smooth scrolling or future enhancements)
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('Website loaded successfully');
+    });
+  </script>
+</body>
+</html>
